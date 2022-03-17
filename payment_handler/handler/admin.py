@@ -3,7 +3,7 @@ from .models import UserAccount
 
 
 class UserAccountAdmin(admin.ModelAdmin):
-    list_display = ('owner',)
+    list_display = ('owner', 'currency')
 
 
 admin.site.register(UserAccount, UserAccountAdmin)
