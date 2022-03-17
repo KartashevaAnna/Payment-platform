@@ -7,4 +7,3 @@ class UserAccountAdmin(admin.ModelAdmin):
 
 
 admin.site.register(UserAccount, UserAccountAdmin)
-
