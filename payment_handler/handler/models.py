@@ -9,5 +9,5 @@ class UserAccounts(models.Model):
     owner = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name='posts'
+        related_name='accounts'
     )
