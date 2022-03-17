@@ -4,7 +4,12 @@ from django.shortcuts import render
 
 def index(request):
     template = 'handler/index.html'
-    return render(request, template)
+    title = 'Payment handler'
+    context = {
+        'title': title,
+        'text': 'Welcome to our platform!'
+               }
+    return render(request, template, context)
 
 
 def personal_page(request):
