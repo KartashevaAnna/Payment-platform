@@ -43,3 +43,7 @@ class UserAccount(models.Model):
         on_delete=models.CASCADE,
         related_name='accounts',
     )
+
+
+class Transationtion(models.Model):
+    amount = PositiveDecimalField(decimal_places=4, max_digits=20, default=0)
