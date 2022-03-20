@@ -45,6 +45,10 @@ class UserAccount(models.Model):
     )
 
 
-class Transationtion(models.Model):
+class Transaction(models.Model):
     amount = PositiveDecimalField(decimal_places=4, max_digits=20, default=0)
     date = models.DateTimeField(auto_now_add=True)
+    source_account = UserAccount
+
+    class Meta:
+        ordering = ['-date']

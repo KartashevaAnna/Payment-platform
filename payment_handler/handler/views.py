@@ -14,3 +14,13 @@ def index(request):
 
 def personal_page(request):
     return HttpResponse('Personal page')
+
+
+def transactions(request):
+    template = 'handler/transactions.html'
+    title = "Transactions"
+    context = {
+        'title': title,
+        'text': 'Here are your transactions'
+    }
+    return render(request, template, context)
