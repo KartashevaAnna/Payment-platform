@@ -47,3 +47,4 @@ class UserAccount(models.Model):
 
 class Transationtion(models.Model):
     amount = PositiveDecimalField(decimal_places=4, max_digits=20, default=0)
+    date = models.DateTimeField(auto_now_add=True)
